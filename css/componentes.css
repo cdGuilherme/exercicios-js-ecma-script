@@ -1,0 +1,15 @@
+.parent-flex-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: var(--tamMaxContainer);
+    padding: var(--tamPadding);
+}
+
+.texto-centralizado {
+    text-align: center;
+}

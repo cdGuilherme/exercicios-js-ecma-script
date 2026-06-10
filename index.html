@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Lista JS Avançado</title>
+</head>
+
+<body class="parent-flex-center">
+  <header class="container">
+    <h1 class="texto-centralizado">Exercícios JS/ECMA Script</h1>
+    <h2 class="texto-centralizado">Parte II - Questões Práticas</h2>
+    <hr>
+  </header>
+  <section class="container">
+    <article>
+      <h3>10&#41; Desenvolva os códigos solicitados em uma única página HTML com JavaScript.</h3>
+      <br>
+    </article>
+
+    <article>
+      <p>
+        a&#41; Solicite ao usuário os valores de X e Y utilizando window.prompt(). Em seguida, calcule o valor de X
+        elevado a Y utilizando o método Math.pow() e exiba o resultado no console.
+      </p>
+      <button onclick="questao10a()">Calcular</button>
+      <br><br>
+    </article>
+
+    <article>
+      <p>
+        b&#41; Crie um array contendo três valores numéricos à sua escolha. Utilize o método Math.min() para
+        identificar
+        o menor valor do array e exiba o resultado utilizando Template String. <br>
+        Exemplo: console.log(`O menor valor é ${menor}`);
+      </p>
+      <button onclick="questao10b()">Identificar</button>
+      <br><br>
+    </article>
+
+    <article>
+      <p>c&#41; Considere o objeto abaixo para os itens c, d, e e f:</p>
+      <pre><code>let dados = {
+    marca: "HP",
+    modelo: "V15",
+    config: {
+        memoria: 8,
+        processador: "i7"
+    },
+    entradas: [1, 2, 3]
+};</code></pre>
+      <br>
+    </article>
+
+    <article>
+      <p>
+        c-1&#41; Utilizando a técnica de desestruturação de objetos, crie as variáveis modelo e processador a partir
+        do
+        objeto dados. Mostre os valores das variáveis no console. <br>
+        Exemplo de sintaxe: let {idade, endereco:{cidade}} = cliente;
+      </p>
+      <button onclick="questao10c1()">Executar</button>
+      <br><br>
+    </article>
+
+    <article>
+      <p>c-2&#41; Altere os valores das variáveis.</p>
+      <button onclick="questao10c2()">Executar</button>
+      <br><br>
+    </article>
+
+    <article>
+      <p>
+        c-3&#41; Utilizando os dados do objeto dados, exiba uma mensagem contendo: a marca do equipamento, o
+        processador, o
+        segundo elemento do array entradas. <br>
+        *Utilize Template String para montar a mensagem.
+      </p>
+      <button onclick="questao10c3()">Executar</button>
+      <br><br>
+    </article>
+
+    <article>
+      <p>
+        d&#41; Acrescente ao objeto dados uma função chamada exibir() que apresente, por meio de um alert(), uma
+        mensagem no
+        formato: <br>
+        “O equipamento é um HP V15 com processador i7”.
+      </p>
+      <button onclick="questao10d()">Exibir alert</button>
+      <br><br>
+    </article>
+
+    <article>
+      <p>
+        e&#41; Crie um novo objeto chamado novoEquip, contendo todas as propriedades do objeto dados e
+        acrescentando as propriedades: valorVenda e qtdEstoque. <br>
+        Utilize o operador Spread (...) para realizar a cópia das propriedades. <br>
+        Exemplo: <br>
+      </p>
+      <pre><code>let pessoa = { nome: "Julia" };
+let pagamento = {
+    ...pessoa,
+    salario: 1000
+};</code></pre>
+      <br>
+    </article>
+  </section>
+
+  <section class="container">
+    <article>
+      <h3>11&#41; Desenvolva os códigos solicitados a seguir:</h3>
+      <br>
+    </article>
+
+    <article>
+      <p>
+        a&#41; Crie o array X contendo os valores 15 e 25, e o array Y contendo os valores 12, 15, 23 e 43.
+      </p>
+      <br>
+    </article>
+
+    <article>
+      <p>
+        b&#41; Exiba todos os valores do array Y em uma única linha, separados pelo caractere "-", utilizando o
+        método join(). <br>
+        Exemplo de saída: 12 - 15 - 23 - 43
+      </p>
+      <button onclick="questao11b()">Exibir</button>
+      <br><br>
+    </article>
+
+    <article>
+      <p>
+        c&#41; Crie um novo array chamado Z, contendo todos os elementos dos arrays X e Y.
+      </p>
+      <br>
+    </article>
+
+    <article>
+      <p>
+        d&#41; Utilizando uma estrutura de repetição for...in, percorra todos os elementos do array Z, multiplique
+        cada
+        elemento por 5 e exiba os resultados em formato de lista HTML.
+      </p>
+      <button onclick="questao11d()">Exibir</button>
+      <ul id="questao11d-lista"></ul>
+      <br>
+    </article>
+
+    <article>
+      <p>
+        e&#41; Utilizando o array Z criado na questão anterior, utilize o método map() para gerar um novo array
+        chamado
+        T, contendo todos os valores de Z multiplicados por 5. <br>
+        Exemplo:
+      </p>
+      <pre><code>let resultado =
+    array.map(function(item) {
+        return item * 5;
+    });</code></pre>
+      <button onclick="questao11e()">Executar</button>
+      <br><br>
+    </article>
+
+    <article>
+      <p>
+        f&#41; Refaça o método map sem uso da estrutura function e return.
+      </p>
+      <button onclick="questao11f()">Executar</button>
+      <br><br>
+    </article>
+
+    <article>
+      <p>
+        g&#41; Utilizando o array Z, empregue o método reduce() para calcular a soma de todos os seus elementos e exiba
+        o resultado.
+      </p>
+      <button onclick="questao11g()">Executar</button>
+      <br><br>
+    </article>
+
+    <article>
+      <p>
+        h&#41; Utilizando o método indexOf(), pesquise o valor 15 no array Z. Caso o valor seja encontrado, exiba seu
+        valor e sua posição (índice). Caso não seja encontrado, exiba a mensagem: “Valor não encontrado”.
+      </p>
+      <button onclick="questao11h()">Executar</button>
+      <br><br>
+    </article>
+
+    <article>
+      <p>
+        i&#41; Adicione o valor "ZERO" ao final do array X.
+      </p>
+      <br>
+    </article>
+
+    <article>
+      <p>
+        j&#41; Exiba a quantidade de elementos existentes no array X.
+      </p>
+      <button onclick="questao11j()">Exibir</button>
+      <br><br>
+    </article>
+
+    <article>
+      <p>
+        l&#41; Remova um elemento do array X.
+      </p>
+      <button onclick="questao11l()">Remover</button>
+      <br><br>
+    </article>
+  </section>
+
+  <section class="container">
+    <article>
+      <h3>12&#41; Converta o código abaixo para a sintaxe de Arrow Function:</h3>
+      <pre><code>function multiplicarPorCinco(numeros) {
+    for(let i = 0; i &lt; numeros.length; i++) {
+        numeros[i] = numeros[i] * 5;
+    }
+    return numeros;
+}
+let numeros = [2, 4, 6, 8];
+let resultado = multiplicarPorCinco(numeros);
+console.log(resultado);</code></pre>
+      <button onclick="questao12()">Exibir resultado</button>
+      <br><br>
+    </article>
+  </section>
+
+  <section class="container">
+    <article>
+      <h3>13&#41; Reescreva o código abaixo utilizando uma função tradicional (function) em vez de Arrow Function:</h3>
+      <pre><code>let mapIdInd = idades.map((idade, index) => {
+    if (idade &gt; 10)
+    return index;
+});</code></pre>
+      <button onclick="questao13()">Exibir resultado</button>
+      <br><br>
+    </article>
+  </section>
+
+  <section class="container">
+    <article>
+      <h3>
+        14&#41; Desenvolva uma página que consulte a API ViaCEP e exiba a cidade a partir do CEP armazenado variável.
+      </h3>
+      <br>
+      <label for="cep">CEP:</label> <br>
+      <input type="text" name="cep" id="cep"> <br>
+      <button id="btn-buscar-cep" onclick="buscarcep()">Buscar CEP</button> <br><br>
+      <div id="reposta-cep"></div>
+      <br>
+    </article>
+  </section>
+
+  <section class="container">
+    <article>
+      <h3>
+        15&#41; Desenvolva uma página contendo os seguintes elementos: um campo para informar a Quantidade, um campo
+        para informar o Valor Unitário e um botão Calcular.
+      </h3>
+      <p>
+        Ao clicar no botão, o sistema deverá calcular o valor total da compra (Quantidade x Valor Unitário). <br>
+        O resultado deverá ser exibido em um novo elemento &lt;p&gt; criado dinamicamente com JavaScript, que será
+        adicionado à página somente após a realização do cálculo. <br>
+        Observação: Utilize os métodos createElement() e appendChild() para criar e inserir o parágrafo na página.
+      </p>
+      <br>
+      <label for="quantidade">Quantidade:</label> <br>
+      <input type="text" name="quantidade" id="quantidade"> <br><br>
+      <label for="valor">Valor Unitário:</label> <br>
+      <input type="text" name="valor" id="valor"> <br><br>
+      <button onclick="questao15()">Calcular</button> <br><br>
+      <div id="resposta-valor-total"></div>
+    </article>
+  </section>
+
+  <script src="./js/questao10.js"></script>
+  <script src="./js/questao11.js"></script>
+  <script src="./js/questao12.js"></script>
+  <script src="./js/questao13.js"></script>
+  <script src="./js/questao14.js"></script>
+  <script src="./js/questao15.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+1. Qual método é utilizado para adicionar um evento a um elemento HTML?
+c) addEventListener()
+
+2. Qual método HTTP é utilizado para consultar informações em uma API?
+b) GET
+
+3. O método fetch() é utilizado para:
+b) Fazer requisições HTTP
+
+4. Qual código de status HTTP indica sucesso na requisição?
+c) 200
+
+5. O método reduce() retorna:
+b) Um único valor resultante
+
+6. Qual método procura e retorna o primeiro elemento encontrado em um array?
+c) find()
+
+7. Na Arrow Function
+const dobro = numero => numero * 5;
+o retorno ocorre:
+b) Automaticamente
+
+8. Na sintaxe
+let [a,b, c, ...valores] = numeros;
+a variável valores recebe:
+c) O restante dos elementos do array
+
+9. Em uma função assíncrona, qual palavra-chave é usada para aguardar uma Promise (promessa de retorno
+de um requisição)?
+c) await
