@@ -11,9 +11,145 @@
 <body class="parent-flex-center">
   <header class="container">
     <h1 class="texto-centralizado">Exercícios JS/ECMA Script</h1>
-    <h2 class="texto-centralizado">Parte II - Questões Práticas</h2>
-    <hr>
+    <article>
+      <hr>
+      <h2 class="texto-centralizado">Parte I - Questões Objetivas</h2>
+      <hr>
+    </article>
   </header>
+
+  <section class="container">
+    <article>
+      <h3>1. Qual método é utilizado para adicionar um evento a um elemento HTML?</h3>
+      <ol style="list-style-type:lower-alpha">
+        <li>createElement()</li>
+        <li>querySelector()</li>
+        <li>addEventListener()</li>
+        <li>appendChild()</li>
+      </ol>
+      <button onclick="questao1()">Exibir resposta</button>
+    </article>
+  </section>
+
+  <section class="container">
+    <article>
+      <h3>2. Qual método HTTP é utilizado para consultar informações em uma API?</h3>
+      <ol style="list-style-type:lower-alpha">
+        <li>POST</li>
+        <li>GET</li>
+        <li>DELETE</li>
+        <li>PATCH</li>
+      </ol>
+      <button onclick="questao2()">Exibir resposta</button>
+    </article>
+  </section>
+
+  <section class="container">
+    <article>
+      <h3>3. O método fetch() é utilizado para:</h3>
+      <ol style="list-style-type:lower-alpha">
+        <li>Criar elementos HTML</li>
+        <li>Fazer requisições HTTP</li>
+        <li>Manipular arrays</li>
+        <li>Criar objetos JSON</li>
+      </ol>
+      <button onclick="questao3()">Exibir resposta</button>
+    </article>
+  </section>
+
+  <section class="container">
+    <article>
+      <h3>4. Qual código de status HTTP indica sucesso na requisição?</h3>
+      <ol style="list-style-type:lower-alpha">
+        <li>404</li>
+        <li>500</li>
+        <li>200</li>
+        <li>400</li>
+      </ol>
+      <button onclick="questao4()">Exibir resposta</button>
+    </article>
+  </section>
+
+  <section class="container">
+    <article>
+      <h3>5. O método reduce() retorna:</h3>
+      <ol style="list-style-type:lower-alpha">
+        <li>Um novo array</li>
+        <li>Um único valor resultante</li>
+        <li>Apenas o primeiro elemento</li>
+        <li>Um objeto JSON</li>
+      </ol>
+      <button onclick="questao5()">Exibir resposta</button>
+    </article>
+  </section>
+
+  <section class="container">
+    <article>
+      <h3>6. Qual método procura e retorna o primeiro elemento encontrado em um array?</h3>
+      <ol style="list-style-type:lower-alpha">
+        <li>map()</li>
+        <li>reduce()</li>
+        <li>find()</li>
+        <li>join()</li>
+      </ol>
+      <button onclick="questao6()">Exibir resposta</button>
+    </article>
+  </section>
+
+  <section class="container">
+    <article>
+      <h3>7. Na Arrow Function</h3>
+      <pre><code>const dobro = numero => numero * 5;</code></pre>
+      <p>o retorno ocorre:</p>
+      <ol style="list-style-type:lower-alpha">
+        <li>Com uso obrigatório de return</li>
+        <li>Automaticamente</li>
+        <li>Com await</li>
+        <li>Apenas em if</li>
+      </ol>
+      <button onclick="questao7()">Exibir resposta</button>
+    </article>
+  </section>
+
+  <section class="container">
+    <article>
+      <h3>8. Na sintaxe</h3>
+      <pre><code>let [a,b, c, ...valores] = numeros;</code></pre>
+      <p> a variável <strong>valores</strong> recebe:</p>
+      <ol style="list-style-type:lower-alpha">
+        <li>Apenas o último elemento</li>
+        <li>Os dois primeiros</li>
+        <li>O restante dos elementos do array</li>
+        <li>Um objeto</li>
+      </ol>
+      <button onclick="questao8()">Exibir resposta</button>
+    </article>
+  </section>
+
+  <section class="container">
+    <article>
+      <h3>
+        9. Em uma função assíncrona, qual palavra-chave é usada para aguardar uma Promise (promessa de retorno de um
+        requisição)?
+      </h3>
+      <ol style="list-style-type:lower-alpha">
+        <li>fetch</li>
+        <li>then</li>
+        <li>await</li>
+        <li>async</li>
+      </ol>
+      <button onclick="questao9()">Exibir resposta</button>
+    </article>
+  </section>
+
+  <section class="container">
+    <article>
+      <hr>
+      <h2 class="texto-centralizado">Parte II - Questões Práticas</h2>
+      <hr>
+    </article>
+  </section>
+
   <section class="container">
     <article>
       <h3>10&#41; Desenvolva os códigos solicitados em uma única página HTML com JavaScript.</h3>
@@ -282,6 +418,7 @@ console.log(resultado);</code></pre>
     </article>
   </section>
 
+  <script src="./js/questao1a9.js"></script>
   <script src="./js/questao10.js"></script>
   <script src="./js/questao11.js"></script>
   <script src="./js/questao12.js"></script>

@@ -46,3 +46,7 @@ code {
     font-family: Consolas, "courier new";
     color: var(--azulClaro);
 }
+
+ul, ol {
+    padding-left: calc(var(--tamPadding) * 2);
+}
