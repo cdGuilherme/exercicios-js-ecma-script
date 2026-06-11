@@ -2,6 +2,11 @@
     /* Variáveis de cores */
     /* ------------------ */
 
+    /* Cores principais */
+    --corPrincipalClara:    #276cff;
+    --corPrincipal:         #155DFC;
+    --corPrincipalEscura:   #1447E6;
+
     /* Neutras */
     --preto:                #1E2939;
     --cinzaEscuro:          #4A5565;
@@ -9,8 +14,9 @@
     --cinzaClaro:           #E9F0FF;
     --branco:               #FFFFFF;
 
+    /* Cores extras */
+    --azulClaro:            #c7ecff;
 
-    
     /* Variáveis de layout */
     /* ------------------- */
 

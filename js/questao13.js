@@ -7,7 +7,7 @@
 //     return index;
 // });
 
-let idades = [1, 2, 3, 10, 11, 20, 30, 40, 50];
+let idades = [1, 2, 3, 10, 11, 20, 30, 4, 5, 6, 40, 7, 8, 9, 50];
 
 let mapIdInd = [];
 
@@ -16,8 +16,6 @@ function indexIdades(arrayDestino, arrayAtual) {
         let idade = arrayAtual[index];
         if (idade > 10) {
             arrayDestino.push(index);
-        } else {
-            arrayDestino.push(undefined);
         }
     }
 }
@@ -25,6 +23,6 @@ function indexIdades(arrayDestino, arrayAtual) {
 indexIdades(mapIdInd, idades);
 
 function questao13() {
-    console.log(mapIdInd);
-    alert(`Resultado exibido no console:\n${mapIdInd}`);
+    console.log(`idades = [${idades.join(", ")}]\nmapIdInd = [${mapIdInd.join(", ")}]`);
+    alert(`Console:\nidades = [${idades.join(", ")}]\nmapIdInd = [${mapIdInd.join(", ")}]`);
 }

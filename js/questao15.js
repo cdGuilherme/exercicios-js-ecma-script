@@ -1,5 +1,7 @@
 "use strict";
 
+// Questão 15:
+
 function questao15() {
     let quantidade = Number(document.querySelector("#quantidade").value);
     let valorUnit = Number(document.querySelector("#valor").value);

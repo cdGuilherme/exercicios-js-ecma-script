@@ -2,3 +2,47 @@
 @import url("./variaveis.css");
 @import url("./fontes.css");
 @import url("./componentes.css");
+
+body {
+    background-color: var(--cinzaClaro);
+    color: var(--preto);
+}
+
+section,
+header {
+    background-color: var(--branco);
+}
+
+button {
+    display: inline-block;
+    background-color: var(--cinza);
+    color: var(--branco);
+    border: none;
+    padding: calc(var(--tamPadding) / 2) var(--tamPadding);
+    margin: calc(var(--tamMargin) / 4) 0;
+    cursor: pointer;
+    border-radius: var(--borderRadius);
+}
+
+button:hover {
+    background-color: var(--corPrincipalClara);
+}
+
+input {
+    border-radius: calc(var(--borderRadius) / 2);
+    border: 1px solid var(--preto);
+    margin-bottom: calc(var(--tamMargin) / 4);
+}
+
+pre {
+    background-color: var(--preto);
+    padding: var(--tamPadding);
+    margin: calc(var(--tamMargin) / 4) 0;
+    overflow-x: auto;
+    border-radius: var(--borderRadius);
+}
+
+code {
+    font-family: Consolas, "courier new";
+    color: var(--azulClaro);
+}

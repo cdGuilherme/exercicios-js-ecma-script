@@ -119,7 +119,8 @@ let pagamento = {
       <p>
         a&#41; Crie o array X contendo os valores 15 e 25, e o array Y contendo os valores 12, 15, 23 e 43.
       </p>
-      <br>
+      <button onclick="questao11a()">Exibir arrays</button>
+      <br><br>
     </article>
 
     <article>
@@ -136,7 +137,8 @@ let pagamento = {
       <p>
         c&#41; Crie um novo array chamado Z, contendo todos os elementos dos arrays X e Y.
       </p>
-      <br>
+      <button onclick="questao11c()">Exibir array</button>
+      <br><br>
     </article>
 
     <article>
@@ -161,7 +163,7 @@ let pagamento = {
     array.map(function(item) {
         return item * 5;
     });</code></pre>
-      <button onclick="questao11e()">Executar</button>
+      <button onclick="questao11e()">Executar e exibir array</button>
       <br><br>
     </article>
 
@@ -169,7 +171,7 @@ let pagamento = {
       <p>
         f&#41; Refaça o método map sem uso da estrutura function e return.
       </p>
-      <button onclick="questao11f()">Executar</button>
+      <button onclick="questao11f()">Executar e exibir array</button>
       <br><br>
     </article>
 
@@ -195,7 +197,8 @@ let pagamento = {
       <p>
         i&#41; Adicione o valor "ZERO" ao final do array X.
       </p>
-      <br>
+      <button onclick="questao11i()">Adicionar</button>
+      <br><br>
     </article>
 
     <article>
@@ -211,7 +214,7 @@ let pagamento = {
         l&#41; Remova um elemento do array X.
       </p>
       <button onclick="questao11l()">Remover</button>
-      <br><br>
+      <br>
     </article>
   </section>
 
@@ -228,7 +231,7 @@ let numeros = [2, 4, 6, 8];
 let resultado = multiplicarPorCinco(numeros);
 console.log(resultado);</code></pre>
       <button onclick="questao12()">Exibir resultado</button>
-      <br><br>
+      <br>
     </article>
   </section>
 
@@ -240,7 +243,7 @@ console.log(resultado);</code></pre>
     return index;
 });</code></pre>
       <button onclick="questao13()">Exibir resultado</button>
-      <br><br>
+      <br>
     </article>
   </section>
 
@@ -254,7 +257,6 @@ console.log(resultado);</code></pre>
       <input type="text" name="cep" id="cep"> <br>
       <button id="btn-buscar-cep" onclick="buscarcep()">Buscar CEP</button> <br><br>
       <div id="reposta-cep"></div>
-      <br>
     </article>
   </section>
 
@@ -272,9 +274,9 @@ console.log(resultado);</code></pre>
       </p>
       <br>
       <label for="quantidade">Quantidade:</label> <br>
-      <input type="text" name="quantidade" id="quantidade"> <br><br>
+      <input type="text" name="quantidade" id="quantidade"> <br>
       <label for="valor">Valor Unitário:</label> <br>
-      <input type="text" name="valor" id="valor"> <br><br>
+      <input type="text" name="valor" id="valor"> <br>
       <button onclick="questao15()">Calcular</button> <br><br>
       <div id="resposta-valor-total"></div>
     </article>

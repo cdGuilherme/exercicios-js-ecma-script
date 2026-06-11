@@ -18,5 +18,5 @@ let resultado = multiplicarPorCinco(numeros);
 
 function questao12() {
     console.log(resultado);
-    alert(`Resultado exibido no console:\n${resultado}`);
+    alert(`Console:\n${resultado}`);
 }

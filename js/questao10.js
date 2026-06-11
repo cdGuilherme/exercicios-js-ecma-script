@@ -17,6 +17,7 @@ function questao10b() {
     array[2] = Number(prompt("Digite o terceiro valor da array:"));
     let resultado = Math.min(...array);
     console.log(`O menor valor digitado é: ${resultado}`);
+    alert(`Resultado exibido no console:\nO menor valor digitado é: ${resultado}`);
 }
 
 // Questão 10c:
@@ -34,7 +35,7 @@ let dados = {
 function questao10c1() {
     let { modelo, config: { processador } } = dados;
     console.log(`Valor da variável modelo: ${modelo}\nValor da variável processador: ${processador}`);
-    alert(`Resultado exibido no console:\nValor da variável modelo: ${modelo}\nValor da variável processador: ${processador}`);
+    alert(`Console:\nValor da variável modelo: ${modelo}\nValor da variável processador: ${processador}`);
 }
 
 // Questão 10c2:
@@ -43,18 +44,18 @@ function questao10c2() {
     modelo = "V20";
     processador = "i9";
     console.log(`Valor da variável modelo: ${modelo}\nValor da variável processador: ${processador}`);
-    alert(`Resultado exibido no console:\nValor da variável modelo: ${modelo}\nValor da variável processador: ${processador}`);
+    alert(`Console:\nValor da variável modelo: ${modelo}\nValor da variável processador: ${processador}`);
 }
 
 // Questão 10c3:
 function questao10c3() {
     console.log(`Marca do equipamento: ${dados.marca}\nProcessador: ${dados.config.processador}\nSegundo elemento do array entradas: ${dados.entradas[1]}`);
-    alert(`Resultado exibido no console:\nMarca do equipamento: ${dados.marca}\nProcessador: ${dados.config.processador}\nSegundo elemento do array entradas: ${dados.entradas[1]}`);
+    alert(`Console:\nMarca do equipamento: ${dados.marca}\nProcessador: ${dados.config.processador}\nSegundo elemento do array entradas: ${dados.entradas[1]}`);
 }
 
 // Questão 10d:
-dados.exibir = function() {
-    alert(`O equipamento é um ${dados.marca} com processador ${dados.config.processador}`);
+dados.exibir = function () {
+    alert(`O equipamento é um ${dados.marca} ${dados.modelo} com processador ${dados.config.processador}`);
 }
 function questao10d() {
     dados.exibir();
